@@ -123,7 +123,7 @@ class Wikipedia(commands.Cog):
         payload = self.generate_payload(query)
         async with aiohttp.ClientSession() as session:
             async with session.get(
-                "https://en.wikipedia.org/w/api.php",
+                "https://wiki.multitheftauto.com/api.php",
                 params=payload,
                 headers={"user-agent": "Red-DiscordBot/" + redbot_version},
             ) as res:
