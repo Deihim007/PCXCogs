@@ -443,6 +443,7 @@ class AutoRoom(
             overwrites=perms.overwrites,
             bitrate=autoroom_source.bitrate,
             user_limit=autoroom_source.user_limit,
+            rtc_region=autoroom_source.rtc_region,
         )
         await self.config.channel(new_voice_channel).source_channel.set(
             autoroom_source.id
